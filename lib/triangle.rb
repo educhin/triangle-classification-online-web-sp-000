@@ -8,6 +8,6 @@ attr_accessor :side1, :side2, :side3
   end
 
   def kind
-
-  end 
+    valid = (a + b <= c || a + c <= b || b + c <= a)
+  end
 end
