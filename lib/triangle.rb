@@ -15,7 +15,7 @@ attr_accessor :side1, :side2, :side3
     if (a + b <= c || a + c <= b || b + c <= a)
       raise TriangleError
     else
-      
+
     end
   end
 
