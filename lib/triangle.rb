@@ -15,7 +15,13 @@ attr_accessor :side1, :side2, :side3
     if (a + b <= c || a + c <= b || b + c <= a)
       raise TriangleError
     else
-
+      if a == b && b == c then
+        :equilateral
+      elsif a == b || a == c || b == c then
+        :isosceles
+      else
+        :scalene
+      end
     end
   end
 
